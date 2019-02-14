@@ -1,6 +1,6 @@
 # NeobisCourseAPI
-Launch the virtual environment> $ source (the name of your virtual environment) / bin / activate. 
-[b]Install all programs in the requirements.txt file. [/b]
+Launch the virtual environment> $ source (the name of your venv) / bin / activate. 
+Install all programs in the requirements.txt file.
 You can install these programs using this:
 pip install -r needs.txt
 Then you need to run the project:
