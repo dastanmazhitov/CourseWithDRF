@@ -7,9 +7,9 @@ Then you need to run the project:
 ... your directory /> python manage.py runserver.
 After, use your localhost in your browser
 
-# Description
+## Description
 Project for Courses
 We are use GET,POST requests
 
-# API Documentation and how to work MyProject: 
+## API Documentation and how to work MyProject: 
 https://courseapp.docs.apiary.io/
