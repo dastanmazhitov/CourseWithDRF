@@ -1,5 +1,6 @@
 from django.db import models
 
+
 class Category(models.Model):
     name = models.CharField(max_length=30)
     imgpath = models.CharField(max_length=1000)
@@ -19,7 +20,7 @@ class Course(models.Model):
 
 
 class Branch(models.Model):
-    course = models.ForeignKey(Course, related_name='branches',on_delete=models.CASCADE, null=True)
+    course = models.ForeignKey(Course, related_name='branches', on_delete=models.CASCADE, null=True)
     latitude = models.CharField(max_length=1000)
     longitude = models.CharField(max_length=1000)
     address = models.CharField(max_length=1000)
@@ -30,11 +31,11 @@ class Branch(models.Model):
 
 class Contact(models.Model):
     CHOISES = (
-    (1, "PHONE"),
-    (2, "FACEBOOK"),
-    (3, "EMAIL"),
+        (1, "PHONE"),
+        (2, "FACEBOOK"),
+        (3, "EMAIL")
     )
-    course = models.ForeignKey(Course, related_name='contacts',on_delete=models.CASCADE, null=True)
+    course = models.ForeignKey(Course, related_name='contacts', on_delete=models.CASCADE, null=True)
     type = models.IntegerField(choices=CHOISES, default=1)
     value = models.CharField(max_length=100)
 
