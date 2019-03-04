@@ -77,8 +77,12 @@ WSGI_APPLICATION = 'courseapp.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': config('DB_ENGINE'),
-        'NAME': config('DB_NAME'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'coursedb',
+        'USER': 'u_course',
+        'PASSWORD': '123',
+        'HOST': 'localhost',
+        'PORT': '',
     }
 }
 
@@ -120,3 +124,4 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
